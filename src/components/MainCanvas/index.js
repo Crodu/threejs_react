@@ -29,7 +29,11 @@ const MainCanvas = () => {
             /> */}
           {/* <ambientLight /> */}
         </Suspense>
-        <directionalLight color="red" position={[0, 0, 5]} />
+        <directionalLight 
+          color="red" 
+          position={[300, 400, 50]}
+          castShadow={true}
+        />
         <PerspectiveCamera
           position={[0.5, 0.5, 0.5]}
           near={0.01}
